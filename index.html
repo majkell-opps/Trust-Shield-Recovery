@@ -6,6 +6,165 @@
     <link rel="icon" href="logop.png" type="image/png">
     <title>Trust Shield Recovery</title>
     <style>
+
+        @media screen and (max-width: 1600px){
+            p.banner{
+                font-size: 35px;
+            }
+            p.a{
+                text-align: center;
+                margin: 5px 0px 5px 0px;
+            }
+            div.ab{
+                justify-content: space-evenly;
+            }     
+            div.terms{
+                justify-content: space-evenly;
+            }
+            p.per-ne{
+                text-align: center;
+            }
+        }
+        @media screen and (max-width: 1473px){
+            p.specializimet{
+                align-content: center;
+                margin-bottom: 0px;
+            }
+        }
+        @media screen and (max-width: 1221px){
+            div.explanation{
+                gap: 0px;
+            }
+            p.bind{
+                font-size: 16px;
+                line-height: 35px;
+            }
+        }
+        @media screen and (max-width: 1230px){
+        p.header{
+            font-size: 45px;
+        }
+        div.per{
+                width: 450px;
+        }
+        h1{
+            margin: 30px 0px 10px 0px;
+        }
+
+        p.serviset{
+            margin-bottom: 5px;
+        }
+        div.cjapim{
+            flex-wrap: wrap;
+            gap: 30px;
+        }
+        div.containers{
+            flex-wrap: wrap;
+            gap: 30px;
+        }
+        li.second{
+            margin-top: 0px;
+            font-size: 20px;
+        }
+        p.banner{
+            margin: 0;
+            text-align: center;
+        }
+        div.third-container{
+            flex-direction: column;
+            height: fit-content;
+        }
+        button.dergo{
+            align-self: center;
+        }
+        p.specializimet{
+            margin: 0px 50px 0px 50px;
+        }
+        p.cbejm{
+            margin: 10px 50px 10px 50px;
+        }
+        div.beiti{
+            padding-bottom: 30px;
+        }
+        }
+        @media screen and (max-width: 1045px){
+                div.second-cont{
+                    flex-direction: column;
+                    height: fit-content;
+                    padding-bottom: 30px;
+
+                }
+                p.banner{
+                    align-self: center;
+                    padding: 0px 50px 0px 50px;
+                }
+                div.rreth{
+                    margin-top: 25px;
+                    gap: 30px;
+                }
+                div.explanation{
+                    gap: 30px;
+                }
+                p.bind{
+                    font-size: 18px;
+                    padding: 0px 50px 0px 50px;
+                }
+        }
+        @media screen and (max-width: 845px){
+            div.first-cont{
+                justify-content: space-between;
+            }
+            h2.emri{
+                margin-left: 30px;
+                flex: 1;
+            }
+            div.mbaje{
+                margin-right: 30px;
+            }
+            p.if-this{
+                font-size: 20px;
+            }
+            div.containers{
+                margin-top: 10px;
+            }
+            div.rreth-ne{
+                flex-direction: column;
+            }
+        }
+        @media screen and (max-width: 497px){
+            h2.emri{
+                display: none;
+            }
+            div.first-cont{
+                justify-content: end;
+            }
+            div.per{
+                width: 300px;
+            }
+            li.second{
+                line-height: 30px;
+            }
+            
+            p.per-ne, p.o{
+                margin: 15px 0px 15px 0px;
+            }
+            
+        }
+        @media screen and (max-width: 345px){
+                div.per{
+                    width: 200px;
+                    padding: 0px 10px 0px 10px;
+                }
+                li.second{
+                    font-size: 14px;
+                    line-height: 25px;
+                }
+                input.emri1, input.mbiemri, input.emaili, input.celi{
+                    width: 90%;
+                    height: 25px;
+                }
+            }
+
         body{
             margin: 0;
         }
@@ -112,9 +271,13 @@
             font-weight: bolder;
             font-style: italic;
             flex: 0.4;
+            align-content: center;
         }
         li{
             margin-left: 4px;
+        }
+        #second{
+            margin-top: 40px;
         }
         .per{
             background-image: url("dark-blue-security-background_23-2147628438.avif");
@@ -128,6 +291,7 @@
             line-height: 50px;
             background-color: darkgray;
             border-radius: 15px;
+            padding: 15px;
         }
         .third-container{
             margin: 30px 5px 0px 5px;
@@ -175,7 +339,7 @@
             margin-bottom: 50px;
             text-align: center;
         }
-        .emri1, .mbiemri, .emaili{
+        .emri1, .mbiemri, .emaili, .celi{
             width: 300px;
             text-align: center;
             height: 30px;
@@ -183,22 +347,7 @@
             font-weight: bold;
             border: none;
         }
-        .numri{
-            background-color: white;
-            width: 300px;
-            border-radius: 15px;
-            height: 30px;
-            border: solid;
-        }
-        .celi{
-            border: none;
-            text-align: center;
-            width: 250px;
-            font-weight: bold;
-            height: 30px;
-            margin-left: 7px;
-            border-radius: 15px;
-        }
+
         .dergo{
             width: 150px;
             height: 35px;
@@ -324,9 +473,11 @@
         <h2 class="emri">
             Trust Shield Recovery
         </h2>
+        <div class="mbaje">
         <button class="but" onclick="document.querySelector('.sh').scrollIntoView({ behavior: 'smooth' });">Home</button>       
         <button class="services" onclick="document.querySelector('.sect').scrollIntoView({ behavior: 'smooth' });">Services</button>             
-        <button class="about" onclick="document.querySelector('.t-about').scrollIntoView({ behavior: 'smooth' });">About</button>       
+        <button class="about" onclick="document.querySelector('.t-about').scrollIntoView({ behavior: 'smooth' });">About</button>  
+    </div>     
     </div>
         <div class="second-cont">
             <div class="explanation">
@@ -337,8 +488,8 @@
         <div class="rreth">
         <p class="banner">Lost Access to Your Crypto? We Can Help!</p>
         <div class="per">
-            <li>Provide us the right information and you have 80% chance to recover your account back.</li>
-            <li style="margin-top: 40px;">Our success varies from the teamwork between the client and our team.</li>
+            <li class="second">Provide us the right information and you have 80% chance to recover your account back.</li>
+            <li class="second">Our success varies from the teamwork between the client and our team.</li>
         </div>
     </div>
 </div>
@@ -361,8 +512,7 @@
         <h1>Contact Us</h1>
         <input class="emri1" placeholder="Name" id="emri" name="emri" onkeydown="Enter(event)">
         <input class="mbiemri" placeholder="Surname" id="mbiemri" name="mbiemri" onkeydown="Enter(event)">
-        <div class="numri" ><a style="color: black; font-weight: bold; margin-left: 5px;">+1</a>
-        <input class="celi" placeholder="Phone Number" id="numri" name="numri" onkeydown="Enter(event)"></div>
+        <input class="celi" placeholder="Phone Number" id="numri" name="numri" onkeydown="Enter(event)">
         <input class="emaili" placeholder="Email" id="emaili" name="emaili" onkeydown="Enter(event)">
         <button class="dergo" onclick="sendEmail()">Contact Us</button>
     </div>
