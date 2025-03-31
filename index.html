@@ -484,6 +484,25 @@
 
   gtag('config', 'AW-16958418347');
 </script>
+    <!-- Event snippet for Page view conversion page
+In your html page, add the snippet and call gtag_report_conversion when someone clicks on the chosen link or button. -->
+<script>
+function gtag_report_conversion(url) {
+  var callback = function () {
+    if (typeof(url) != 'undefined') {
+      window.location = url;
+    }
+  };
+  gtag('event', 'conversion', {
+      'send_to': 'AW-16958418347/Uu58CLuww7AaEKvbs5Y_',
+      'value': 1.0,
+      'currency': 'EUR',
+      'event_callback': callback
+  });
+  return false;
+}
+</script>
+
 <body>
     <section class="sh">
     <div class="first-cont">
